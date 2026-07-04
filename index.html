@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Welcome</title>
+</head>
+
+<body>
+    <h1>Welcome to the Web challenge</h1>
+    <p>Look around the page to find the flag.</p>
+    <style>
+        .hidden-flag {
+            color: transparent;
+            user-select: text;
+            -webkit-user-select: text;
+        }
+
+        .hidden-flag::selection {
+            color: #000;
+            /* hint */
+            background: #f12;
+        }
+    </style>
+    <div class="hidden-flag" style="position: absolute; top: 16px; right: 16px;">
+        RXML{ydmio_isqn_2025}
+    </div>
+</body>
+
+</html>
